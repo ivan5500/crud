@@ -5,6 +5,13 @@ public class Employee {
 	private String name;
 	private int number;
 	private int age;
+	
+	public Employee(String name, int number, int age) {
+		super();
+		this.name = name;
+		this.number = number;
+		this.age = age;
+	}
 	public String getName() {
 		return name;
 	}
