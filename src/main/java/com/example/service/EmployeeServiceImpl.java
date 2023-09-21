@@ -24,12 +24,12 @@ public class EmployeeServiceImpl implements IEmployeeService{
 
 	@Override
 	public ArrayList<Employee> get() {
-		return null;
+		return employeeRepo.get();
 	}
 
 	@Override
-	public Employee update(Employee name) {
-		return null;
+	public Employee update(Employee emp) {
+		return employeeRepo.update(emp);
 	}
 	
 

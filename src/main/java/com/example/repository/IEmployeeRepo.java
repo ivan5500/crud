@@ -9,6 +9,6 @@ public interface IEmployeeRepo {
 	public Employee insert(Employee emp);
 	public void delete(Employee emp);
 	public ArrayList<Employee> get();
-	public Employee update(Employee name);
+	public Employee update(Employee emp);
  
 }
