@@ -1,6 +1,7 @@
 package com.example.demo.repository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +14,7 @@ import com.example.demo.model.Employee;
 public class EmployeeRepoImpl implements IEmployeeRepo{
 
 	private static Logger LOG = LoggerFactory.getLogger(CrudApplication.class);
-	private ArrayList<Employee> employees = new ArrayList<Employee>();
+	private List<Employee> employees = new ArrayList<Employee>();
 	@Override
 	public Employee insert(Employee emp) {
 		LOG.info("Insertando empleado");
@@ -34,7 +35,7 @@ public class EmployeeRepoImpl implements IEmployeeRepo{
 	}
 
 	@Override
-	public ArrayList<Employee> get() {
+	public List<Employee> get() {
 		LOG.info("Listando empleados");
 		return employees;
 	}
