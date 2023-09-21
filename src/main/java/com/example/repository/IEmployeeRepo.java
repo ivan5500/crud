@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.example.model.Employee;
 
-public interface IEmployee {
+public interface IEmployeeRepo {
 	
 	public Employee insert(Employee emp);
 	public void delete(Employee emp);
