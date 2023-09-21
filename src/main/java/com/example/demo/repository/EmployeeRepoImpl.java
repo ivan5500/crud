@@ -13,23 +13,30 @@ import com.example.demo.model.Employee;
 public class EmployeeRepoImpl implements IEmployeeRepo{
 
 	private static Logger LOG = LoggerFactory.getLogger(CrudApplication.class);
-	
+	private ArrayList<Employee> employees = new ArrayList<Employee>();
 	@Override
 	public Employee insert(Employee emp) {
 		LOG.info("Insertando empleado");
-		return null;
+		employees.add(emp);
+		return emp;
 	}
 
 	@Override
-	public void delete(Employee emp) {
+	public void delete(int numberEmp) {
 		LOG.info("Eliminando empleado");
+		for(Employee employee: employees) {
+			if (employee.getNumber() == numberEmp){
+				employees.remove(employee);
+				break;
+			}
+		}
 		
 	}
 
 	@Override
 	public ArrayList<Employee> get() {
 		LOG.info("Listando empleados");
-		return null;
+		return employees;
 	}
 
 	@Override

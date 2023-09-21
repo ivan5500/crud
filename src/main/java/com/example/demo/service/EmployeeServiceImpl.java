@@ -15,12 +15,12 @@ public class EmployeeServiceImpl implements IEmployeeService{
 	public IEmployeeRepo employeeRepo;
 	@Override
 	public Employee insert(Employee emp) {
-		return null;
+		return employeeRepo.insert(emp);
 	}
 
 	@Override
-	public void delete(Employee emp) {
-		employeeRepo.delete(emp);	}
+	public void delete(int numberEmp) {
+		employeeRepo.delete(numberEmp);	}
 
 	@Override
 	public ArrayList<Employee> get() {
