@@ -22,19 +22,19 @@ public class EmployeeRepoImpl implements IEmployeeRepo{
 
 	@Override
 	public void delete(Employee emp) {
-		// TODO Auto-generated method stub
+		LOG.info("Eliminando empleado");
 		
 	}
 
 	@Override
 	public ArrayList<Employee> get() {
-		// TODO Auto-generated method stub
+		LOG.info("Listando empleados");
 		return null;
 	}
 
 	@Override
 	public Employee update(Employee name) {
-		// TODO Auto-generated method stub
+		LOG.info("Actualizando empleado");
 		return null;
 	}
 
