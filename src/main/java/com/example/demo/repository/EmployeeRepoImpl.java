@@ -1,4 +1,4 @@
-package com.example.repository;
+package com.example.demo.repository;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import com.example.demo.CrudApplication;
-import com.example.model.Employee;
+import com.example.demo.model.Employee;
 
 @Repository
 public class EmployeeRepoImpl implements IEmployeeRepo{

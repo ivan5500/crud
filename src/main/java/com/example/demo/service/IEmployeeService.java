@@ -1,8 +1,8 @@
-package com.example.service;
+package com.example.demo.service;
 
 import java.util.ArrayList;
 
-import com.example.model.Employee;
+import com.example.demo.model.Employee;
 
 public interface IEmployeeService {
 

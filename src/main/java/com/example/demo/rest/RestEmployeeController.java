@@ -1,4 +1,4 @@
-package com.example.rest;
+package com.example.demo.rest;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.CrudApplication;
-import com.example.model.Employee;
-import com.example.service.IEmployeeService;
+import com.example.demo.model.Employee;
+import com.example.demo.service.IEmployeeService;
 
 @RestController
 public class RestEmployeeController {

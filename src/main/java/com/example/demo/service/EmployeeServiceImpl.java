@@ -1,12 +1,12 @@
-package com.example.service;
+package com.example.demo.service;
 
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.model.Employee;
-import com.example.repository.IEmployeeRepo;
+import com.example.demo.model.Employee;
+import com.example.demo.repository.IEmployeeRepo;
 
 @Service
 public class EmployeeServiceImpl implements IEmployeeService{

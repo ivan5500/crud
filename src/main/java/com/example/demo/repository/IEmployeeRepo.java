@@ -1,8 +1,8 @@
-package com.example.repository;
+package com.example.demo.repository;
 
 import java.util.ArrayList;
 
-import com.example.model.Employee;
+import com.example.demo.model.Employee;
 
 public interface IEmployeeRepo {
 	
