@@ -40,9 +40,17 @@ public class EmployeeRepoImpl implements IEmployeeRepo{
 	}
 
 	@Override
-	public Employee update(Employee name) {
+	public Employee update(Employee empl) {
 		LOG.info("Actualizando empleado");
-		return null;
+		for(Employee employee: employees) {
+			if (employee.getNumber() == empl.getNumber()){
+				employee.setName(empl.getName());
+				employee.setNumber(empl.getNumber());
+				employee.setAge(empl.getAge());
+				break;
+			}
+		}
+		return empl;
 	}
 
 }
